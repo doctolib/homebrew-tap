@@ -5,6 +5,11 @@ class Libpq < Formula
   sha256 "7fdf23060bfc715144cbf2696cf05b0fa284ad3eb21f0c378591c6bca99ad180"
   revision 1
 
+  bottle do
+    root_url "https://github.com/doctolib/homebrew-tap/releases/download/libpq-11.5_1"
+    sha256 big_sur: "ac85baa6cd57f69a817dfd8c39528cd46e8b9637988fe79a39eb1be80082c7a8"
+  end
+
   keg_only "conflicts with postgres formula"
 
   depends_on "openssl@1.1"
